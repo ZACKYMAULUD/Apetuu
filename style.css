@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+    height:100vh;
+    background:linear-gradient(to bottom,#08142d,#162447,#1f4068);
+    font-family:'Arial',sans-serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+/* CARD */
+.envelope{
+    position:relative;
+    z-index:10;
+}
+
+.letter{
+    width:360px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(15px);
+    color:white;
+    text-align:center;
+    padding:25px;
+    border-radius:25px;
+    box-shadow:0 0 40px rgba(0,0,0,.3);
+}
+
+/* SLIDESHOW */
+.slideshow{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+/* FOTO */
+#slideImage{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+/* TEKS FOTO */
+.imgText{
+    position:absolute;
+    bottom:8px;
+    left:50%;
+    transform:translateX(-50%);
+    width:90%;
+    color:white;
+    font-size:13px;
+    text-align:center;
+    text-shadow:0 0 10px black;
+}
+
+/* BUTTON */
+.buttons{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+button{
+    border:none;
+    padding:12px 20px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.yesBtn{
+    background:#ff4d88;
+    color:white;
+}
+
+.noBtn{
+    background:white;
+    color:black;
+    position:relative;
+}
+
+/* HEART */
+#heartCircle{
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:0;
+}
